@@ -1,0 +1,19 @@
+.appContainer {
+  display: flex;
+}
+
+.mainContent {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 0;
+    width: 100%;
+  }
+}
