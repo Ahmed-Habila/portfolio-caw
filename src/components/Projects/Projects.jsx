@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Projects.module.css';
+import Button from '../Button/Button';
 
 const projectsData = [
   {
@@ -57,8 +58,8 @@ const Projects = () => {
               ))}
             </div>
             <div className={styles.links}>
-              <a href={selectedProject.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>
-              {selectedProject.liveDemo && <a href={selectedProject.liveDemo} target="_blank" rel="noopener noreferrer">Live Demo</a>}
+              <Button href={selectedProject.githubLink} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">GitHub</Button>
+              {selectedProject.liveDemo && <Button href={selectedProject.liveDemo} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">Live Demo</Button>}
             </div>
           </div>
         </div>

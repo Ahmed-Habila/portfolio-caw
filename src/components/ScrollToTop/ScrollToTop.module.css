@@ -4,24 +4,3 @@
   right: 2rem;
   z-index: 999;
 }
-
-.button {
-  background-color: #646cff;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  transition: background-color 0.3s, transform 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.button:hover {
-  background-color: #535bf2;
-  transform: translateY(-3px);
-}

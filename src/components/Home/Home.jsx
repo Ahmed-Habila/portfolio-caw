@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Home.module.css';
+import Button from '../Button/Button';
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
           Passionate developer with a knack for building responsive and user-friendly web applications. 
           I love turning complex problems into simple, beautiful solutions.
         </p>
-        <a href="#projects" className={styles.ctaButton}>View My Work</a>
+        <Button href="#projects" variant="primary" className={styles.ctaButton}>View My Work</Button>
       </div>
     </section>
   );

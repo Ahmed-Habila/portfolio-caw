@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Sidebar.module.css';
+import Button from '../Button/Button';
 import { FaHome, FaProjectDiagram, FaCode, FaEnvelope, FaGithub, FaLinkedin, FaMoon, FaSun } from 'react-icons/fa';
 
 const Sidebar = () => {
@@ -52,10 +53,10 @@ const Sidebar = () => {
       </nav>
 
       <div className={styles.footer}>
-        <button onClick={toggleTheme} className={styles.themeToggle} aria-label="Toggle Theme">
+        <Button onClick={toggleTheme} variant="outline" fullWidth className={styles.themeToggle} aria-label="Toggle Theme">
           {theme === 'light' ? <FaMoon /> : <FaSun />}
           <span className={styles.themeText}>{theme === 'light' ? 'Dark Mode' : 'Light Mode'}</span>
-        </button>
+        </Button>
         
         <div className={styles.socials}>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">

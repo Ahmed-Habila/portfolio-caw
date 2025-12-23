@@ -46,6 +46,7 @@
   opacity: 1;
   background-color: var(--hover-bg);
   border-radius: 0 8px 8px 0;
+  transform: translateX(10px);
 }
 
 .projectListItem.active {
@@ -141,20 +142,17 @@
   
   .projectList {
     width: 100%;
-    flex-direction: row;
-    overflow-x: auto;
-    padding-bottom: 1rem;
+    flex-direction: column;
   }
 
   .projectListItem {
-    min-width: 200px;
-    border-left: none;
-    border-bottom: 4px solid transparent;
-    border-radius: 8px 8px 0 0;
+    width: 100%;
+    border-left: 4px solid transparent;
+    border-bottom: none;
   }
 
   .projectListItem.active {
-    border-left: none;
-    border-bottom-color: var(--primary-color);
+    border-left-color: var(--primary-color);
+    border-bottom: none;
   }
 }

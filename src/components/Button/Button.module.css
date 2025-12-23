@@ -1,0 +1,63 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.primary:hover {
+  background-color: var(--primary-color-hv);
+}
+
+.outline {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.outline:hover {
+  background-color: var(--hover-bg);
+}
+
+.outlinePrimary {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.outlinePrimary:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+.icon {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.icon:hover {
+  background-color: var(--primary-color-hv);
+  transform: translateY(-3px);
+}
+
+.fullWidth {
+  width: 100%;
+}
