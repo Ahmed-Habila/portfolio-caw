@@ -23,7 +23,7 @@ const Sidebar = () => {
     <aside className={styles.sidebar}>
       <div className={styles.profile}>
         <div className={styles.imageContainer}>
-          <div className={styles.placeholderImage}>Photo</div>
+          <img src="src/assets/pfp.jpg" alt="Ahmed Habila" className={styles.profileImage} />
         </div>
       </div>
 
@@ -59,13 +59,13 @@ const Sidebar = () => {
         </Button>
         
         <div className={styles.socials}>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <a href="https://github.com/Ahmed-Habila" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/ahmed-habila-1b7495300/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
-          <a href="mailto:ahmed@example.com" aria-label="Email">
+          <a href="mailto:ahmed.habila@univ-constantine2.dz" aria-label="Email">
             <FaEnvelope />
           </a>
         </div>

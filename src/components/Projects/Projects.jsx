@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Projects.module.css';
 import Button from '../Button/Button';
 
@@ -30,39 +30,25 @@ const projectsData = [
 ];
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState(projectsData[0]);
-
   return (
     <section id="projects" className={styles.projects}>
       <h2>Project Showcase</h2>
-      <div className={styles.container}>
-        <div className={styles.projectList}>
-          {projectsData.map((project) => (
-            <div 
-              key={project.id} 
-              className={`${styles.projectListItem} ${selectedProject.id === project.id ? styles.active : ''}`}
-              onMouseEnter={() => setSelectedProject(project)}
-            >
-              <h3>{project.title}</h3>
-            </div>
-          ))}
-        </div>
-        
-        <div className={styles.projectDisplay}>
-          <div key={selectedProject.id} className={styles.card}>
-            <h3>{selectedProject.title}</h3>
-            <p>{selectedProject.description}</p>
+      <div className={styles.gridContainer}>
+        {projectsData.map((project) => (
+          <div key={project.id} className={styles.card}>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
             <div className={styles.techStack}>
-              {selectedProject.techStack.map((tech, index) => (
+              {project.techStack.map((tech, index) => (
                 <span key={index} className={styles.badge}>{tech}</span>
               ))}
             </div>
             <div className={styles.links}>
-              <Button href={selectedProject.githubLink} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">GitHub</Button>
-              {selectedProject.liveDemo && <Button href={selectedProject.liveDemo} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">Live Demo</Button>}
+              <Button href={project.githubLink} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">GitHub</Button>
+              {project.liveDemo && <Button href={project.liveDemo} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">Live Demo</Button>}
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

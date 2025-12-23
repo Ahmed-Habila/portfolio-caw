@@ -11,9 +11,9 @@ const Contact = () => {
         <div className={styles.info}>
           <p>Feel free to reach out for collaborations or just a friendly hello!</p>
           <div className={styles.details}>
-            <p><strong>Email:</strong> ahmed@example.com</p>
-            <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/ahmed</a></p>
-            <p><strong>GitHub:</strong> <a href="#">github.com/ahmed</a></p>
+            <p><strong>Email:</strong> ahmed.habila@univ-constantine2.dz</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmed-habila-1b7495300/">https://www.linkedin.com/in/ahmed-habila-1b7495300/</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Ahmed-Habila">https://github.com/Ahmed-Habila</a></p>
           </div>
         </div>
         
