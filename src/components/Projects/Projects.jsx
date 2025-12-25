@@ -6,11 +6,11 @@ const projectsData = [
   {
     id: 1,
     title: "Lab 7: Kanban Board",
-    description: "A drag-and-drop Kanban board to manage tasks efficiently.",
-    image: "https://placehold.co/600x400",
-    techStack: ["React", "Vite", "CSS Modules"],
-    githubLink: "#",
-    liveDemo: "#"
+    description: "A task management app",
+    image: "src/assets/lab7.png",
+    techStack: ["React", "Vite", "CSS", "Jest"],
+    githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/lab7",
+    liveDemo: "/lab7/index.html"
   },
   {
     id: 2,
