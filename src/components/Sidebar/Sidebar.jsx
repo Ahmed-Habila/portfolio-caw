@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Sidebar.module.css';
 import Button from '../Button/Button';
-import { FaHome, FaProjectDiagram, FaCode, FaEnvelope, FaGithub, FaLinkedin, FaMoon, FaSun } from 'react-icons/fa';
+import { FaHome, FaProjectDiagram, FaCode, FaEnvelope, FaGithub, FaLinkedin, FaMoon, FaSun, FaBars, FaTimes } from 'react-icons/fa';
 
 const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
@@ -19,10 +20,23 @@ const Sidebar = () => {
     localStorage.setItem('theme', newTheme);
   };
 
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <aside className={styles.sidebar}>
-      <div className={styles.profile}>
-        <div className={styles.imageContainer}>
+    <>
+      <button 
+        className={styles.mobileToggle} 
+        onClick={toggleSidebar}
+        aria-label="Toggle navigation"
+      >
+        {isOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      <aside className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
+        <div className={styles.profile}>
+          <div className={styles.imageContainer}>
           <img src="src/assets/pfp.jpg" alt="Ahmed Habila" className={styles.profileImage} />
         </div>
       </div>
@@ -30,22 +44,22 @@ const Sidebar = () => {
       <nav className={styles.nav}>
         <ul className={styles.navList}>
           <li>
-            <a href="#home" className={styles.navLink}>
+            <a href="#home" className={styles.navLink} onClick={() => setIsOpen(false)}>
               <FaHome className={styles.icon} /> Home
             </a>
           </li>
           <li>
-            <a href="#projects" className={styles.navLink}>
+            <a href="#projects" className={styles.navLink} onClick={() => setIsOpen(false)}>
               <FaProjectDiagram className={styles.icon} /> Projects
             </a>
           </li>
           <li>
-            <a href="#skills" className={styles.navLink}>
+            <a href="#skills" className={styles.navLink} onClick={() => setIsOpen(false)}>
               <FaCode className={styles.icon} /> Skills
             </a>
           </li>
           <li>
-            <a href="#contact" className={styles.navLink}>
+            <a href="#contact" className={styles.navLink} onClick={() => setIsOpen(false)}>
               <FaEnvelope className={styles.icon} /> Contact
             </a>
           </li>
@@ -71,6 +85,7 @@ const Sidebar = () => {
         </div>
       </div>
     </aside>
+    </>
   );
 };
 

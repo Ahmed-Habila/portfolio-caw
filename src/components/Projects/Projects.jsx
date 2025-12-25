@@ -7,6 +7,7 @@ const projectsData = [
     id: 1,
     title: "Lab 7: Kanban Board",
     description: "A drag-and-drop Kanban board to manage tasks efficiently.",
+    image: "https://placehold.co/600x400",
     techStack: ["React", "Vite", "CSS Modules"],
     githubLink: "#",
     liveDemo: "#"
@@ -15,6 +16,7 @@ const projectsData = [
     id: 2,
     title: "Lab 6: Weather App",
     description: "Fetches real-time weather data using a public API.",
+    image: "https://placehold.co/600x400",
     techStack: ["React", "Fetch API", "CSS"],
     githubLink: "#",
     liveDemo: "#"
@@ -23,6 +25,7 @@ const projectsData = [
     id: 3,
     title: "Lab 5: To-Do List",
     description: "A simple to-do list with add, delete, and mark as complete features.",
+    image: "https://placehold.co/600x400",
     techStack: ["React", "State Management"],
     githubLink: "#",
     liveDemo: "#"
@@ -36,16 +39,21 @@ const Projects = () => {
       <div className={styles.gridContainer}>
         {projectsData.map((project) => (
           <div key={project.id} className={styles.card}>
-            <h3>{project.title}</h3>
-            <p>{project.description}</p>
-            <div className={styles.techStack}>
-              {project.techStack.map((tech, index) => (
-                <span key={index} className={styles.badge}>{tech}</span>
-              ))}
+            <div className={styles.imageContainer}>
+              <img src={project.image} alt={project.title} className={styles.projectImage} />
             </div>
-            <div className={styles.links}>
-              <Button href={project.githubLink} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">GitHub</Button>
-              {project.liveDemo && <Button href={project.liveDemo} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">Live Demo</Button>}
+            <div className={styles.cardContent}>
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className={styles.techStack}>
+                {project.techStack.map((tech, index) => (
+                  <span key={index} className={styles.badge}>{tech}</span>
+                ))}
+              </div>
+              <div className={styles.links}>
+                <Button href={project.githubLink} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">GitHub</Button>
+                {project.liveDemo && <Button href={project.liveDemo} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">Live Demo</Button>}
+              </div>
             </div>
           </div>
         ))}
