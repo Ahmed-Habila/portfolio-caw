@@ -50,6 +50,14 @@
   cursor: default;
 }
 
+.icon {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+}
+
 .list li:hover {
   transform: translateX(10px);
   color: var(--primary-color);

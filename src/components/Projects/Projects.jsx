@@ -1,29 +1,43 @@
 import React from 'react';
 import styles from './Projects.module.css';
-import Button from '../Button/Button';
+import ProjectCard from '../ProjectCard/ProjectCard';
+import lab7Img from '../../assets/lab7.png';
+import lab5exo1 from '../../assets/lab5exo1.png';
+import lab5exo2 from '../../assets/lab5exo2.png';
+import lab5exo3 from '../../assets/lab5exo3.png';
+import lab5exo4 from '../../assets/lab5exo4.png';
 
 const projectsData = [
   {
     id: 1,
     title: "Lab 7: Kanban Board",
     description: "A task management app",
-    image: "src/assets/lab7.png",
+    image: lab7Img,
     techStack: ["React", "Vite", "CSS", "Jest"],
     githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/lab7",
     liveDemo: "/lab7/index.html"
   },
   {
     id: 2,
-    title: "Lab 6: Weather App",
-    description: "Fetches real-time weather data using a public API.",
+    title: "Lab 5: React Components",
+    description: "A project demonstrating the use of React components to build a user interface.",
+    images: [lab5exo1, lab5exo2, lab5exo3, lab5exo4],
+    techStack: ["React", "Vite", "CSS"],
+    githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/lab5",
+    liveDemo: "/lab5/index.html"
+  },
+  {
+    id: 3,
+    title: "Lab 1: To-Do List",
+    description: "A simple to-do list with add, delete, and mark as complete features.",
     image: "https://placehold.co/600x400",
-    techStack: ["React", "Fetch API", "CSS"],
+    techStack: ["React", "State Management"],
     githubLink: "#",
     liveDemo: "#"
   },
   {
-    id: 3,
-    title: "Lab 5: To-Do List",
+    id: 4,
+    title: "Lab 1: To-Do List",
     description: "A simple to-do list with add, delete, and mark as complete features.",
     image: "https://placehold.co/600x400",
     techStack: ["React", "State Management"],
@@ -38,24 +52,7 @@ const Projects = () => {
       <h2>Project Showcase</h2>
       <div className={styles.gridContainer}>
         {projectsData.map((project) => (
-          <div key={project.id} className={styles.card}>
-            <div className={styles.imageContainer}>
-              <img src={project.image} alt={project.title} className={styles.projectImage} />
-            </div>
-            <div className={styles.cardContent}>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <div className={styles.techStack}>
-                {project.techStack.map((tech, index) => (
-                  <span key={index} className={styles.badge}>{tech}</span>
-                ))}
-              </div>
-              <div className={styles.links}>
-                <Button href={project.githubLink} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">GitHub</Button>
-                {project.liveDemo && <Button href={project.liveDemo} variant="outlinePrimary" target="_blank" rel="noopener noreferrer">Live Demo</Button>}
-              </div>
-            </div>
-          </div>
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
     </section>
