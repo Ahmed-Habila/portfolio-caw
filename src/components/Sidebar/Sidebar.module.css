@@ -79,29 +79,6 @@
   padding-top: 1.5rem;
 }
 
-.themeToggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 0.8rem;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  color: var(--text-color);
-  cursor: pointer;
-  margin-bottom: 1.5rem;
-  transition: all 0.2s;
-}
-
-.themeToggle:hover {
-  background-color: var(--hover-bg);
-}
-
-.themeText {
-  margin-left: 0.5rem;
-}
-
 .socials {
   display: flex;
   justify-content: center;

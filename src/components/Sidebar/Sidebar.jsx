@@ -1,24 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './Sidebar.module.css';
-import Button from '../Button/Button';
-import { FaHome, FaProjectDiagram, FaCode, FaEnvelope, FaGithub, FaLinkedin, FaMoon, FaSun, FaBars, FaTimes } from 'react-icons/fa';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import { FaHome, FaProjectDiagram, FaCode, FaEnvelope, FaGithub, FaLinkedin, FaBars, FaTimes } from 'react-icons/fa';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
-    document.documentElement.setAttribute('data-theme', savedTheme);
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-  };
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
@@ -67,10 +53,7 @@ const Sidebar = () => {
       </nav>
 
       <div className={styles.footer}>
-        <Button onClick={toggleTheme} variant="outline" fullWidth className={styles.themeToggle} aria-label="Toggle Theme">
-          {theme === 'light' ? <FaMoon /> : <FaSun />}
-          <span className={styles.themeText}>{theme === 'light' ? 'Dark Mode' : 'Light Mode'}</span>
-        </Button>
+        <ThemeToggle />
         
         <div className={styles.socials}>
           <a href="https://github.com/Ahmed-Habila" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
