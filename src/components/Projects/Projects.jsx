@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Projects.module.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import TypingTitle from '../TypingTitle/TypingTitle';
 import lab7Img from '../../assets/lab7.png';
 import lab5exo1 from '../../assets/lab5exo1.png';
 import lab5exo2 from '../../assets/lab5exo2.png';
@@ -49,7 +50,7 @@ const projectsData = [
 const Projects = () => {
   return (
     <section id="projects" className={styles.projects}>
-      <h2>Project Showcase</h2>
+      <TypingTitle text="Project Showcase" />
       <div className={styles.gridContainer}>
         {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />

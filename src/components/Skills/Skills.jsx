@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Skills.module.css';
+import TypingTitle from '../TypingTitle/TypingTitle';
 import { FaJs, FaHtml5, FaCss3Alt, FaPython, FaJava, FaReact, FaNodeJs, FaGitAlt } from 'react-icons/fa';
 import { SiExpress, SiMongodb, SiNextdotjs, SiPostman, SiJest } from 'react-icons/si';
 import { VscVscode } from 'react-icons/vsc';
@@ -30,7 +31,7 @@ const skillsData = {
 const Skills = () => {
   return (
     <section id="skills" className={styles.skills}>
-      <h2>Skills & Technologies</h2>
+      <TypingTitle text="Skills & Technologies" />
       <div className={styles.container}>
         {Object.entries(skillsData).map(([category, items]) => (
           <div key={category} className={styles.category}>

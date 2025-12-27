@@ -2,11 +2,12 @@ import React from 'react';
 import styles from './Contact.module.css';
 import Button from '../Button/Button';
 import FormInput from '../FormInput/FormInput';
+import TypingTitle from '../TypingTitle/TypingTitle';
 
 const Contact = () => {
   return (
     <section id="contact" className={styles.contact}>
-      <h2>Contact Me</h2>
+      <TypingTitle text="Contact Me" />
       <div className={styles.container}>
         <div className={styles.info}>
           <p>Feel free to reach out for collaborations or just a friendly hello!</p>
