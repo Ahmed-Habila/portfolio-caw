@@ -13,7 +13,7 @@
 .label {
   width: 4em;
   height: 2em;
-  background-color: var(--card-bg);
+  background-color: var(--text-muted);
   border: 1px solid var(--border-color);
   border-radius: 2em;
   position: relative;
@@ -23,17 +23,18 @@
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.2s;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .label .faMoon {
-  color: var(--text-muted);
+  color: var(--sidebar-bg);
   font-size: 1em;
   margin-left: 0.4em;
   margin-right: 0.2em;
 }
 
 .label .faSun {
-  color: var(--primary-color);
+  color: var(--sidebar-bg);
   font-size: 1em;
   margin-right: 0.4em;
   margin-left: 0.2em;
@@ -42,12 +43,13 @@
 .ball {
   width: 1.5em;
   height: 1.5em;
-  background-color: var(--text-color);
+  background-color: var(--sidebar-bg);
   border-radius: 50%;
   position: absolute;
   top: 0.2em;
   left: 0.2em;
   transition: transform 0.2s linear;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .checkbox:checked + .label .ball {

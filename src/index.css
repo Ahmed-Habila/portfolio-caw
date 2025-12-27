@@ -3,15 +3,14 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* Light Theme Variables */
   --bg-color: #f7f5f1;
   --text-color: #344945;
-  --text-muted: #6b7c79;
+  --text-muted: #6e8570;
   --sidebar-bg: #e0dcd1;
   --card-bg: #ffffff;
   --border-color: #6b7c79;
-  --primary-color: #344945;
-  --primary-color-hv: #23302d;
+  --primary-color: #415b4b;
+  --primary-color-hv: #32483b;
   --hover-bg: #c7c3b5;
 
   color-scheme: light;
@@ -27,12 +26,12 @@
 [data-theme='dark'] {
   --bg-color: #344945;
   --text-color: #f7f5f1;
-  --text-muted: #d5e3e8;
+  --text-muted: #c9d69f;
   --sidebar-bg: #23302d;
   --card-bg: #455955;
   --border-color: #5c706c;
   --primary-color: #e4e3bc;
-  --primary-color-hv: #c2c19b;
+  --primary-color-hv: #cfcfa2;
   --hover-bg: #5c706c;
 
   color-scheme: dark;
