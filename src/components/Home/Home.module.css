@@ -16,12 +16,38 @@
   font-size: 4.5rem;
   margin-bottom: 0.5rem;
   color: var(--text-color);
+  min-height: 1.2em; /* Prevent layout shift */
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 1s infinite;
+  color: var(--primary-color);
+  font-weight: 100;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .home h2 {
   font-size: 2rem;
   color: var(--text-muted);
   margin-bottom: 2.5rem;
+  min-height: 1.2em; /* Prevent layout shift */
+}
+
+.bioContainer {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.bioContainer.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .bio {
