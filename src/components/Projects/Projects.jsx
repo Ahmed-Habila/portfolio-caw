@@ -20,7 +20,7 @@ const projectsData = [
     images: [lab1exo1, lab1exo2, lab1exo3, lab1exo4],
     techStack: ["HTML", "CSS"],
     githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/Lab1",
-    liveDemo: "/Lab1/index.html"
+    liveDemo: "Lab1/index.html"
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ const projectsData = [
     images: [lab5exo1, lab5exo2, lab5exo3, lab5exo4],
     techStack: ["React", "Vite", "CSS"],
     githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/lab5",
-    liveDemo: "/lab5/index.html"
+    liveDemo: "lab5/index.html"
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const projectsData = [
     image: lab7Img,
     techStack: ["React", "Vite", "CSS", "Jest"],
     githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/lab7",
-    liveDemo: "/lab7/index.html"
+    liveDemo: "lab7/index.html"
   }
 ];
 
