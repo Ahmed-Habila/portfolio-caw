@@ -16,7 +16,7 @@
   font-size: 4.5rem;
   margin-bottom: 0.5rem;
   color: var(--text-color);
-  min-height: 1.2em; /* Prevent layout shift */
+  min-height: 1.2em;
 }
 
 .cursor {
@@ -36,7 +36,7 @@
   font-size: 2rem;
   color: var(--text-muted);
   margin-bottom: 2.5rem;
-  min-height: 1.2em; /* Prevent layout shift */
+  min-height: 1.2em;
 }
 
 .bioContainer {
