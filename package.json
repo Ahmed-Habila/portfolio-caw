@@ -1,15 +1,18 @@
 {
   "name": "portfolio-caw",
-  "private": true,
+  "homepage": "https://Ahmed-Habila.github.io/portfolio-caw",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview --port 8080"
+    "preview": "vite preview --port 8080",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0"
