@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Projects.module.css';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import TypingTitle from '../TypingTitle/TypingTitle';
-import lab7Img from '../../assets/lab7.png';
+import lab7 from '../../assets/lab7.png';
 import lab5exo1 from '../../assets/lab5exo1.png';
 import lab5exo2 from '../../assets/lab5exo2.png';
 import lab5exo3 from '../../assets/lab5exo3.png';
@@ -11,6 +11,8 @@ import lab1exo1 from '../../assets/lab1exo1.png';
 import lab1exo2 from '../../assets/lab1exo2.png';
 import lab1exo3 from '../../assets/lab1exo3.png';
 import lab1exo4 from '../../assets/lab1exo4.png';
+import lab3 from '../../assets/lab3.png';
+import lab4 from '../../assets/lab4.png';
 
 const projectsData = [
   {
@@ -26,7 +28,7 @@ const projectsData = [
     id: 2,
     title: "Lab 3: Node.js Basics",
     description: "Introduction to Node.js, file system operations, and modules.",
-    image: "https://placehold.co/600x400",
+    image: lab3,
     techStack: ["Node.js", "JavaScript"],
     githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/Lab3"
   },
@@ -34,7 +36,7 @@ const projectsData = [
     id: 3,
     title: "Lab 4: Unit Testing with Jest",
     description: "Unit testing JavaScript functions using Jest framework.",
-    image: "https://placehold.co/600x400",
+    image: lab4,
     techStack: ["Jest", "Node.js", "Testing"],
     githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/Lab4_Jest"
   },
@@ -51,7 +53,7 @@ const projectsData = [
     id: 5,
     title: "Lab 7: Kanban Board",
     description: "A task management app",
-    image: lab7Img,
+    image: lab7,
     techStack: ["React", "Vite", "CSS", "Jest"],
     githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/lab7",
     liveDemo: "lab7/index.html"
