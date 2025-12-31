@@ -1,7 +1,7 @@
 .sidebar {
   width: 260px;
   height: 100vh;
-  background-color: var(--sidebar-bg);
+  background-color: color-mix(in srgb, var(--sidebar-bg), transparent 1%);
   color: var(--text-color);
   position: fixed;
   top: 0;

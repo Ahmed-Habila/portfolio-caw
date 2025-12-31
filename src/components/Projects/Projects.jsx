@@ -7,19 +7,39 @@ import lab5exo1 from '../../assets/lab5exo1.png';
 import lab5exo2 from '../../assets/lab5exo2.png';
 import lab5exo3 from '../../assets/lab5exo3.png';
 import lab5exo4 from '../../assets/lab5exo4.png';
+import lab1exo1 from '../../assets/lab1exo1.png';
+import lab1exo2 from '../../assets/lab1exo2.png';
+import lab1exo3 from '../../assets/lab1exo3.png';
+import lab1exo4 from '../../assets/lab1exo4.png';
 
 const projectsData = [
   {
     id: 1,
-    title: "Lab 7: Kanban Board",
-    description: "A task management app",
-    image: lab7Img,
-    techStack: ["React", "Vite", "CSS", "Jest"],
-    githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/lab7",
-    liveDemo: "/lab7/index.html"
+    title: "Lab 1: HTML & CSS Basics",
+    description: "A collection of fundamental HTML and CSS exercises covering structure, multimedia, and styling.",
+    images: [lab1exo1, lab1exo2, lab1exo3, lab1exo4],
+    techStack: ["HTML", "CSS"],
+    githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/Lab1",
+    liveDemo: "/Lab1/index.html"
   },
   {
     id: 2,
+    title: "Lab 3: Node.js Basics",
+    description: "Introduction to Node.js, file system operations, and modules.",
+    image: "https://placehold.co/600x400",
+    techStack: ["Node.js", "JavaScript"],
+    githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/Lab3"
+  },
+  {
+    id: 3,
+    title: "Lab 4: Unit Testing with Jest",
+    description: "Unit testing JavaScript functions using Jest framework.",
+    image: "https://placehold.co/600x400",
+    techStack: ["Jest", "Node.js", "Testing"],
+    githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/Lab4_Jest"
+  },
+  {
+    id: 4,
     title: "Lab 5: React Components",
     description: "A project demonstrating the use of React components to build a user interface.",
     images: [lab5exo1, lab5exo2, lab5exo3, lab5exo4],
@@ -28,22 +48,13 @@ const projectsData = [
     liveDemo: "/lab5/index.html"
   },
   {
-    id: 3,
-    title: "Lab 1: To-Do List",
-    description: "A simple to-do list with add, delete, and mark as complete features.",
-    image: "https://placehold.co/600x400",
-    techStack: ["React", "State Management"],
-    githubLink: "#",
-    liveDemo: "#"
-  },
-  {
-    id: 4,
-    title: "Lab 1: To-Do List",
-    description: "A simple to-do list with add, delete, and mark as complete features.",
-    image: "https://placehold.co/600x400",
-    techStack: ["React", "State Management"],
-    githubLink: "#",
-    liveDemo: "#"
+    id: 5,
+    title: "Lab 7: Kanban Board",
+    description: "A task management app",
+    image: lab7Img,
+    techStack: ["React", "Vite", "CSS", "Jest"],
+    githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/lab7",
+    liveDemo: "/lab7/index.html"
   }
 ];
 
