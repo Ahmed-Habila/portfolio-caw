@@ -37,7 +37,7 @@ const projectsData = [
     title: "Lab 4: Unit Testing with Jest",
     description: "Unit testing JavaScript functions using Jest framework.",
     image: lab4,
-    techStack: ["Jest", "Node.js", "Testing"],
+    techStack: ["Jest", "Node.js", "JavaScript"],
     githubLink: "https://github.com/Ahmed-Habila/caw-labs/tree/main/Lab4_Jest"
   },
   {
