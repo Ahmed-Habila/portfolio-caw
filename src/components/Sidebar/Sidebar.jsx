@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './Sidebar.module.css';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import { FaHome, FaProjectDiagram, FaCode, FaEnvelope, FaGithub, FaLinkedin, FaBars, FaTimes } from 'react-icons/fa';
+import pfp from '../../assets/pfp.jpg';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Sidebar = () => {
       <aside className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
         <div className={styles.profile}>
           <div className={styles.imageContainer}>
-          <img src="src/assets/pfp.jpg" alt="Ahmed Habila" className={styles.profileImage} />
+          <img src={pfp} alt="Ahmed Habila" className={styles.profileImage} />
         </div>
       </div>
 
